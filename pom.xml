@@ -35,6 +35,16 @@
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-thymeleaf</artifactId>
        </dependency>
+	   <dependency>
+   <groupId>de.codecentric</groupId>
+   <artifactId>spring-boot-admin-server</artifactId>
+   <versions>1.0.2</version>
+</dependency>
+<dependency>
+   <groupId>de.codecentric</groupId>
+   <artifactId>spring-boot-starter-admin-client</artifactId>
+   <versions>1.0.2</version>
+</dependency>
 		<!-- End Spring Security -->
 	</dependencies>
 	<repositories>
