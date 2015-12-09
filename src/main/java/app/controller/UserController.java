@@ -32,6 +32,6 @@ public class UserController {
 	public List<User> getAllUsers() {
 		List<User> list = userService.findAll();
 		list.add(new User("murli","murli"));
-		return userService.findAll();
+		return list;
 	}
 }
