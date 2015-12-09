@@ -19,8 +19,6 @@ import app.service.UserService;
 @RequestMapping("/user")
 public class UserController {
 
-
-
 	@Autowired
 	private UserService userService;
 
@@ -32,6 +30,8 @@ public class UserController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public List<User> getAllUsers() {
+		List<User> list = userService.findAll();
+		list.add(new User("murli","murli"));
 		return userService.findAll();
 	}
 }
